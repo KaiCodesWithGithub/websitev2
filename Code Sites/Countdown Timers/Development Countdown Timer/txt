@@ -1,0 +1,13 @@
+function toBack(){
+    display("seconds");
+    display("ok");
+    remove("back");
+    remove("start");
+    remove("stop");
+    remove("continue");
+    remove("counter");
+    seconds = Number(secInput.value);
+    toCount = false;
+}
+
+onclick="toBack()"

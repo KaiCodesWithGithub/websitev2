@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: cyan;
+}
+
+body .main .parallax_wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-perspective: 300px;
+          perspective: 300px;
+}
+
+body .main .parallax_wrapper .intro_screen {
+  height: 100vh;
+  background-color: blueviolet;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 50px;
+}
+
+body .main .parallax_wrapper .outro_screen {
+  height: 100vh;
+  background-color: deepskyblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 50px;
+}
+
+body .main .parallax_wrapper .parallax_group {
+  position: relative;
+  height: 100vh;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+body .main .parallax_wrapper .parallax_group .parallax_layer {
+  position: absolute;
+  inset: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 50px;
+}
+
+body .main .parallax_wrapper .parallax_group .base_layer {
+  -webkit-transform: translateZ(-300px) scale(2);
+          transform: translateZ(-300px) scale(2);
+}
+
+body .main .parallax_wrapper .parallax_group .mid_layer {
+  -webkit-transform: translateZ(0px);
+          transform: translateZ(0px);
+}
+
+body .main .parallax_wrapper .parallax_group .top_layer {
+  -webkit-transform: translateZ(210px) scale(0.3);
+          transform: translateZ(210px) scale(0.3);
+}
+
+body .main .parallax_wrapper #intro {
+  z-index: 0;
+}
+
+body .main .parallax_wrapper #group-1 {
+  z-index: -1;
+}
+
+body .main .parallax_wrapper #group-1 > .base_layer {
+  background-color: cyan;
+}
+
+body .main .parallax_wrapper #group-2 > .mid_layer {
+  background-color: darkcyan;
+}
+/*# sourceMappingURL=style.css.map */

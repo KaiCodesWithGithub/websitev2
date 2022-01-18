@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "sass": "^1.48.0"
+  },
+  "name": "my-portfolio",
+  "version": "0.5.0",
+  "main": "index.html",
+  "devDependencies": {},
+  "scripts": {
+    "sass": "sass style.scss style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

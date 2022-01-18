@@ -1,0 +1,56 @@
+html {
+  font-family: 'Roboto', sans-serif;
+  /* background-color: rgb(14, 218, 218); */
+}
+
+.sideNav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #0e8282;
+  overflow-x: hidden;
+  padding-top: 60px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.sideNav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #FFFFFF;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sideNav a:hover {
+  color: #0ebebe;
+}
+
+.sideNav .navbarCloseBtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 30px;
+  margin-left: 50px;
+}
+
+.openNav {
+  position: fixed;
+  left: 15px;
+  z-index: 1;
+}
+
+@media screen and (max-height: 450px) {
+  .sideNav {
+    padding-top: 15px;
+  }
+  .sideNav a {
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=sidebar.css.map */

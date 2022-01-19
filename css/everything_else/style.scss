@@ -81,6 +81,20 @@ body {
             }
 
             /*#outro {}*/
+
+            /* Contact Me */
+
+            .contact_me {
+                position: relative;
+                background-color: chartreuse;
+                font-size: 10px;
+                height: 30vh;
+
+                a {
+                    position: absolute;
+                    bottom: 45%;
+                }
+            }
         }
     }
 }

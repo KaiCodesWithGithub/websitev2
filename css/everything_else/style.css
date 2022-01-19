@@ -10,6 +10,7 @@ body .main .parallax_wrapper {
   -webkit-perspective: 300px;
           perspective: 300px;
   /*#outro {}*/
+  /* Contact Me */
 }
 
 body .main .parallax_wrapper .intro_screen {
@@ -131,5 +132,17 @@ body .main .parallax_wrapper #group-2 > .base_layer {
 
 body .main .parallax_wrapper #group-2 > .mid_layer {
   z-index: 0;
+}
+
+body .main .parallax_wrapper .contact_me {
+  position: relative;
+  background-color: chartreuse;
+  font-size: 10px;
+  height: 30vh;
+}
+
+body .main .parallax_wrapper .contact_me a {
+  position: absolute;
+  bottom: 45%;
 }
 /*# sourceMappingURL=style.css.map */

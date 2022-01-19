@@ -7,11 +7,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
+    @media screen and (max-height: 450px) {
+        font-size: 50px;
+    }
+    @media screen and (min-height: 451px) {
+        font-size: 35px;
+    }
 }
 
 body {
-    background-color: cyan;
     .main {
         .parallax_wrapper {
             height: 100vh;
@@ -67,13 +71,17 @@ body {
                 background-color: cyan;
             }
 
-            #group-2 {}
-
-            #group-2 > .mid_layer {
-                background-color: darkcyan;
+            #group-2 > .base_layer {
+                background-color: forestgreen;
+                z-index: -1;
             }
 
-            #outro {}
+            #group-2 > .mid_layer {
+                z-index: 0;
+            }
+
+            /*#outro {}*/
         }
     }
 }
+

@@ -3,16 +3,13 @@
   padding: 0;
 }
 
-body {
-  background-color: cyan;
-}
-
 body .main .parallax_wrapper {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
   -webkit-perspective: 300px;
           perspective: 300px;
+  /*#outro {}*/
 }
 
 body .main .parallax_wrapper .intro_screen {
@@ -27,7 +24,18 @@ body .main .parallax_wrapper .intro_screen {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  body .main .parallax_wrapper .intro_screen {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-height: 451px) {
+  body .main .parallax_wrapper .intro_screen {
+    font-size: 35px;
+  }
 }
 
 body .main .parallax_wrapper .outro_screen {
@@ -42,7 +50,18 @@ body .main .parallax_wrapper .outro_screen {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  body .main .parallax_wrapper .outro_screen {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-height: 451px) {
+  body .main .parallax_wrapper .outro_screen {
+    font-size: 35px;
+  }
 }
 
 body .main .parallax_wrapper .parallax_group {
@@ -64,7 +83,18 @@ body .main .parallax_wrapper .parallax_group .parallax_layer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  body .main .parallax_wrapper .parallax_group .parallax_layer {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-height: 451px) {
+  body .main .parallax_wrapper .parallax_group .parallax_layer {
+    font-size: 35px;
+  }
 }
 
 body .main .parallax_wrapper .parallax_group .base_layer {
@@ -94,7 +124,12 @@ body .main .parallax_wrapper #group-1 > .base_layer {
   background-color: cyan;
 }
 
+body .main .parallax_wrapper #group-2 > .base_layer {
+  background-color: forestgreen;
+  z-index: -1;
+}
+
 body .main .parallax_wrapper #group-2 > .mid_layer {
-  background-color: darkcyan;
+  z-index: 0;
 }
 /*# sourceMappingURL=style.css.map */

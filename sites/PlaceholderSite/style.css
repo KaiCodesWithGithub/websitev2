@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background: #202731;
+    overflow-x: hidden;
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw;
+
+}
+
+.blue {
+    background: blue;
+}
+
+.red {
+    background: red;
+}
+
+.dark {
+    background: #0f0f10;
+}
+
+.purple {
+    background: blueviolet;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.darkgreen {
+    background: darkgreen;
+}
+
+.aqua {
+    background: aqua;
+}
+
+.pink {
+    background: pink;
+}
+
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(108% + 1.3px);
+    height: 195px;
+}
+
+.wave .shape-fill {
+    fill: #0000FF;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .wave svg {
+        width: calc(136% + 1.3px);
+        height: 130px;
+    }
+}
+
+.spacer {
+    aspect-ratio: 900/600;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.layer1 {
+    background-image: url('./layer1.svg');
+}
+
+.layer2 {
+    background-image: url('./toplayer2.svg');
+}
+
+.layer3 {
+    background-image: url('./bottomlayer3.svg');
+}

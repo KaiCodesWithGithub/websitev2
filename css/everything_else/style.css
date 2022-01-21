@@ -132,6 +132,7 @@ body .main .parallax_wrapper #group-2 > .base_layer {
 
 body .main .parallax_wrapper #group-2 > .mid_layer {
   z-index: 0;
+  background-color: forestgreen;
 }
 
 body .main .parallax_wrapper .contact_me {

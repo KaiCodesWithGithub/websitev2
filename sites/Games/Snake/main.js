@@ -27,9 +27,11 @@ var snake = {
             snake.parts.unshift(location)
             game.score++
         }
-        //for (var i = 0; i < 20; i++) {
-        //    snake.parts.unshift(location)
-        //}
+        if (game.auto = true) {
+            for (var i = 0; i < 20; i++) {
+                snake.parts.unshift(location)
+            }
+        }
     }
 };
 
@@ -74,6 +76,7 @@ var game = {
             "################"
         ]
     },
+    auto: false,
     timer: null,
     score: 0,
     tickNumber: 0,
@@ -165,13 +168,13 @@ var gameControl = {
         if (key == "a") targetDirection = "W";
         if (key == "s") targetDirection = "S";
         if (key == "d") targetDirection = "E";
-        //if (key == "e") {
-        //    for (var snakePart = 0; snakePart < snake.parts.length; snakePart++) {
-        //        var part = snake.parts[snakePart];
-        //        part.x = location.x;
-        //        part.y = location.y;
-        //    }
-        //}
+        if (key == "e") {
+            for (var snakePart = 0; snakePart < snake.parts.length; snakePart++) {
+                var part = snake.parts[snakePart];
+                part.x = location.x;
+                part.y = location.y;
+            }
+        }
         snake.facing = targetDirection;
         game.tick();
     },

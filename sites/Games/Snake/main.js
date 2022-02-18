@@ -27,11 +27,11 @@ var snake = {
             snake.parts.unshift(location)
             game.score++
         }
-        if (game.auto = true) {
-            for (var i = 0; i < 20; i++) {
-                snake.parts.unshift(location)
-            }
-        }
+        //if (game.auto = true) {
+        //    for (var i = 0; i < 20; i++) {
+        //        snake.parts.unshift(location)
+        //    }
+        //}
     }
 };
 

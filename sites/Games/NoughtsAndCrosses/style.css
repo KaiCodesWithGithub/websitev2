@@ -1,7 +1,9 @@
 .html {
     font-family: 'Roboto', sans-serif;
+    background-color: blueviolet;
 }
 .row div{
+    align-self: center;
     padding: 10px;
     border: 1px solid black;
     height: 30px;

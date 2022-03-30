@@ -11,4 +11,4 @@ mail("kai@homehacks.tk", "Here is the subject line", '<p>hi</p>', "From: website
 
 
 ?>
-
+<?php include_once("emailer.html"); ?>
